@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Mission to Mars</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>h1 {text-align: center;}
+    .center{text-align: center;}
+    </style>
+</head>
+
+<body>
+
+    <div class = "container">
+    <div class = "row">
+    <div class = "col-12">
+    <h1>Mission to Mars</h1>
+    </div></div>
+        <div class = "row">
+    <div class = "col-12" style="text-align:center">
+
+    <a class="btn btn-primary" href="/scrape">Scrape new data</a>
+    </div> </div></div>
+
+    <div class = "container">
+    <div class = "row">
+<h2>Latest Mars News: {{ news_title }}</h2></div>
+    <div class = "row">
+<div class = "col-9"><img src="{{ featured_image_url }}", width="100%"></div>
+{{ facts_table }}
+</div>
+
+</div></div>
+<h1>Mars Hemispheres</h1>
+    <div class = "container">
+    <div class = "row">
+    <div class = "col-6"><img src="{{ img1_url }}", width="100%"></div>
+    <div class = "col-6"><img src="{{ img2_url }}", width="100%"></div>
+</div></div>
+
+    <div class = "container">
+    <div class = "row">
+    <div class = "col-6"><img src="{{ img3_url }}", width="100%"></div>
+    <div class = "col-6"><img src="{{ img4_url }}", width="100%"></div>
+</div></div>
+</body>
+</html>
